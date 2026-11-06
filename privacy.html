@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tip Overlay Privacy Policy</title>
+<meta name="description" content="How Tip Overlay handles your data, including data from Google Tasks.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <h1>Privacy Policy</h1>
+  </header>
+  <p class="muted">Tip Overlay · Effective November 6, 2026</p>
+
+  <div class="card">
+    <p><strong>In short:</strong> Tip Overlay runs entirely on your PC. It has no server, no account system, no analytics and no ads. When you turn on Google Tasks sync, it reads and writes your tasks directly between your PC and Google, and shares them with no one else.</p>
+  </div>
+
+  <h2>Data stored on your PC</h2>
+  <p>Tip Overlay saves the following in your Windows user profile, in <code>%APPDATA%\TipOverlay</code>:</p>
+  <ul>
+    <li>The text, position and color of your tips.</li>
+    <li>Your sync settings, such as the name of the Google Tasks list to sync with.</li>
+    <li>Which tip is linked to which Google task, so that changes sync correctly.</li>
+  </ul>
+  <p>When you sign in with Google, the sign-in token is stored in Windows Credential Manager on your PC. Tip Overlay never sees or stores your Google password.</p>
+
+  <h2>Google user data</h2>
+  <p>Google Tasks sync is optional and off until you sign in. When you sign in, Tip Overlay asks for permission to manage your Google Tasks (<code>https://www.googleapis.com/auth/tasks</code>) and uses it only to keep your tips and one task list in sync:</p>
+  <ul>
+    <li><strong>What it reads:</strong> the names of your task lists, to find the list you chose (named "Tip" by default), and the title, notes and status of the tasks in that list.</li>
+    <li><strong>What it changes:</strong> it creates that list if it doesn't exist. It creates and updates tasks in that list when you add or edit tips, and marks a task completed when you delete its tip. It doesn't permanently delete tasks, and it doesn't touch tasks in your other lists.</li>
+    <li><strong>Where the data goes:</strong> only between your PC and Google's servers, over an encrypted connection. Task contents are kept on your PC only to show them as tips.</li>
+    <li><strong>Sharing:</strong> Tip Overlay doesn't sell, share or transfer your Google user data to anyone. It doesn't use your data for advertising, and doesn't use it to train AI or machine learning models.</li>
+  </ul>
+  <p>Tip Overlay's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Removing access and deleting data</h2>
+  <ul>
+    <li>To stop syncing and remove the sign-in from your PC, open <strong>Sync settings</strong> from the tray icon and click <strong>Sign out</strong>. This also revokes Tip Overlay's access at Google.</li>
+    <li>You can also revoke access anytime at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>To delete everything Tip Overlay stored on your PC, sign out, exit the app, and delete the <code>%APPDATA%\TipOverlay</code> folder.</li>
+    <li>Your tasks stay in your Google account, where you manage them as usual.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Tip Overlay isn't directed at children under 13 and doesn't knowingly collect their data.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy? <a href="https://github.com/osoft/tipoverlay-site/issues">Open an issue</a>.</p>
+
+  <footer>
+    <a href="index.html">Tip Overlay home</a>
+  </footer>
+</main>
+</body>
+</html>
